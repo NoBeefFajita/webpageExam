@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <script>
+        function check() {
+            var user_id = document.form1.user_id.value;
+            var pw = document.form1.pw.value;
+            if(user_id == "") {
+                alert("아이디를 입력하세요."); // 경고창 띄우기 (모달창)
+                document.form1.user_id.focus(); // 입력 포커스 이동
+                return;
+            }
+            if(pw == "") {
+                alert("비밀번호를 입력하세요."); // 경고창 띄우기 (모달창)
+                document.form1.pw.focus(); // 입력 포커스 이동
+                return;
+            }
+            document.form1.submit(); // 수동 submit 함수
+        }
+    </script>
+</head>
+
+<body>
+    <form action="login.jsp" method="post" name = "form1">
+        <fieldset>
+            <legend>로그인 정보</legend>
+            <table>
+                <tr>
+                    <td>아이디 : </td>
+                    <td><input type="text" name="user_id"></td>
+                </tr>
+                <tr>
+                    <td>비밀번호 : </td>
+                    <td><input type="password" name="pw"></td>
+                </tr>
+            </table>
+        </fieldset>
+        <button onclick="check()">로그인</button>
+    </form>
+</body>
+
+</html>

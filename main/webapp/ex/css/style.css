@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+table {
+    border-collapse: collapse;
+}
+
+.thead tr {
+    border-bottom: 0.2em solid #000;
+}
+
+.thead th {
+    padding-bottom: 20px;
+}
+
+thead td {
+    text-align: right;
+}
+
+th {
+    text-align: left;
+}
+
+#title {
+    font-size: 40px;
+}
+
+#a {
+    color: rgb(247, 23, 23);
+    font-weight: 550;
+}
+
+#b {
+    color: #555;
+    font-weight: 550;
+}
+
+
+.select {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    color: #555;
+}
+
+#select_right {
+    text-align: right;
+}
+
+select {
+    color: #555;
+    font-weight: 550;
+    padding: 5px;
+}
+
+#go {
+    border: 3px solid rgb(123,123,123);
+    background-color: white;
+    color: rgb(123,123,123);
+    padding: 4px;
+}
+
+.no,
+.noAfter3 {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 800;
+}
+.no{
+    background-color: #FB4357;
+}
+.noAfter3 {
+    background-color: #333;
+}
+
+.blank {
+    width: 5%;
+}
+
+.d-day {
+    color: #FB4357;
+    font-weight: 800;
+}
+
+.reservation {
+    border: none;
+    background-color: #FB4357;
+    color: white;
+    font-size: 16px;
+    font-weight: 530;
+    padding: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+}
+
+.explain {
+    text-align: left;
+    width: 225px;
+}
+
+.explain > thead {
+    font-size: 18px;
+}
+
+.explain > tbody {
+    font-size: 13px;
+}
+
+.egg {
+    border-left: 1px solid #ddd;
+}
+
+.mvpost {
+    padding-top: 20px;
+}

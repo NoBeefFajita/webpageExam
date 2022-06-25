@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>symantic layout</title>
+    <style type="text/css">
+        * {
+            margin: 0px;
+            padding: 5px 0px;
+        }
+
+        body{
+            font-size: 14px;
+            width: auto;
+            height: auto;
+        }
+
+        section {
+            width: 80%;
+            float: left;
+            background: #e4f2d0;
+        }
+
+        aside {
+            width: 20%;
+            float: right;
+            background: #f1dcf2;
+        }
+
+        div {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .content {
+            font-size: 16px;
+            color: red;
+            margin: 0px 0px;
+        }
+
+        .section1 {
+            background-color: orange;
+        }
+
+        #article1 {
+            font-size: 12px;
+            color: gray;
+            background-color: silver;
+            margin: 0px 10px;
+        }
+
+        header,
+        footer {
+            background-color: #085c3c;
+            color: white;
+        }
+
+        footer {
+            clear: both;
+        }
+
+        nav {
+            background-color: olive;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        h1 {
+            font-size: 11px;
+        }
+    </style>
+</head>
+
+<body>
+    <div align="center">
+        <header>
+            <h3>[header]</h3>
+            <h1>홍길동의 홈페이지</h1>
+        </header>
+    </div>
+    <div align="center">
+        <nav>
+            <h3>[navigation]</h3>
+            <span><a href="#">쇼핑</a></span>
+            <span><a href="#">영화</a></span>
+            <span><a href="#">카페</a></span>
+            <span><a href="#">뉴스</a></span>
+        </nav>
+    </div>
+    <div class="content">
+        <section class="section1">
+            <h3>[section]</h3>
+            <article id="article1">
+                <h3>[article]</h3>
+                <h3>영화</h3>
+                <ul style="list-style-type: none;">
+                    <li>상영작 : </li>
+                    <li>영화랭킹 :</li>
+                    <li>예매 :</li>
+                    <li>평점 :</li>
+                </ul>
+            </article>
+        </section>
+        <aside>
+            <h3>[aside]</h3>
+            <h5>참조링크 <a href="https://google.com"><img src="../images/google.png" alt="" width="50" height="10"></a></h5>
+        </aside>
+    </div>
+
+    <div>
+        <footer>
+            <h3>[footer]</h3>
+            <h2>copyright &copy; 2022 Hong GilDong</h2>
+        </footer>
+    </div>
+</body>
+
+</html>

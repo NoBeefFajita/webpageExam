@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>salary2</title>
+</head>
+
+<body>
+    <h2>급여 계산 프로그램</h2>
+    <form method="post" action="salary_result2.jsp" name="form1">
+        <table>
+            <tr>
+                <td>이름 : </td>
+                <td><input name="name"></td>
+            </tr>
+            <tr>
+                <td> 직급 : </td>
+                <td><select name="job" id="job">
+                    <option value="defult">-----</option>
+                    <option value="사원">사원</option>
+                    <option value="주임">주임</option>
+                    <option value="대리">대리</option>
+                    <option value="과장">과장</option>
+                    <option value="부장">부장</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td> 기본급 :</td>
+                <td><input name="basic"></td>
+            </tr>
+            <tr>
+                <td> 보너스 :</td>
+                <td><select name="bonus" id="bonus">
+                    <option value="bonus">------</option>
+                </select></td>
+            </tr>
+        </table>
+        <!-- html5전용 button태그는 submit기능이 있다. -->
+        <button>확인</button>
+
+    </form>
+
+    <script>
+        var bonus = document.getElementById('bonus');
+        document.getElementById('job').addEventListener('change', changeBonus);
+        document.form1.basic.addEventListener('input', changeBonus);
+        
+        function changeBonus() {
+            const job = document.form1.job.value;
+            const jobs = document.getElementById('job');
+            var num = 2;
+            for(var i = 1; i < 6; i++) {
+                const basic = document.form1.basic.value;
+                if( job == jobs[i].value) bonus.options[0].text = basic * num;
+                if( job == jobs[0].value) bonus.options[0].text = '------'
+                num += 0.5;
+            }
+            bonus.options[0].value = bonus.options[0].text;
+        }
+    </script>
+</body>
+</html>
